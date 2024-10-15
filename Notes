@@ -1,3 +1,50 @@
 CTF  http://10.50.22.129:8000/
 ALFA-M-007
 https://os.cybbh.io/public
+Stack number is 3 and ip is 10.50.26.236 for admin station
+
+Pofiles (good place for persitance check)(profile-location)
+All Users, All Hosts-$PsHome\Profile.ps1
+All Users, Current Host-$PsHome\Microsoft.PowerShell_profile.ps1
+Current User, All Hosts-$Home\[My]Documents\Profile.ps1
+Current User, Current Host-$Home\[My ]Documents\WindowsPowerShell\Profile.ps1
+By default the profiles are not built, the paths are checked whenever PowerShell is opened
+In addition, other programs that host PowerShell can support their own profiles. For example, PowerShell Integrated Scripting Environment (ISE) supports the following host-specific profiles.
+All users, Current Host-$PsHome\Microsoft.PowerShellISE_profile.ps1
+Current user, Current Host-$Home\[My]Documents\WindowsPowerShell\Microsoft.PowerShellISE_profile.ps1
+
+for day 1 stop at 4.2
+
+Another place to check for persistance is reg keys rememeber reg query command
+HKCU, HKU, HKCC, HKLM, HKCR
+
+net use * http://live.sysinternals.com (run command for sysinternal tool access)
+Type *autoruns -accepteula* (may not run without accepteula)
+New-PSDrive -Name FileServer -PSProvider FileSystem -Root "\\file-server\warrior share" (map to an internal server)
+
+Locations for persistance
+HKLM\Software\Microsoft\Windows\CurrentVersion\Run
+HKLM\Software\Microsoft\Windows\CurrentVersion\RunOnce
+HKU\<SID>\Software\Microsoft\Windows\CurrentVersion\Run
+HKU\<SID>\Software\Microsoft\Windows\CurrentVersion\RunOnce
+HKLM\SYSTEM\CurrentControlSet\services
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders
+HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
+HKEY_CLASSES_ROOT\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\Children\001\Internet Explorer\DOMStorage-Edge URL hist
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB-usb forensics
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USBSTOR-usb forensics
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSavePidlMRU-MRU hist
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs-Recent files
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList-Windows user profile
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Profiles-Network profiles
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management-Virtual memory
+HKEY_CURRENT_USER\Software\Microsoft\Windows Search\ProcessedSearchRoots-recent search terms using default search and cortona
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search-recent search terms using default search and cortona
+
+dir /R will reveal ADS
+
+
+
+
+

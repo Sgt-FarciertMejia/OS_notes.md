@@ -44,6 +44,7 @@ HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search-recent search
 
 dir /R will reveal ADS
 
+Check shtasks for win and crontab for linux for persistance
 
 
 

@@ -46,6 +46,32 @@ dir /R will reveal ADS
 
 Check shtasks for win and crontab for linux for persistance
 
+on linux the command linux loads kernel info
+/etc/init is a spot to check for persistance
+check runlevels as well /etc/rc*.d
+systemd newer and slinked to /usr/lib/systemd/system
+/etc/enviroment for persistance
+/etc/profile is a script that executes whenever a user logs into an interactive shell on Linux. its functionality depends entirely on the version of Linux being used. Ubuntu Linux uses it to set the BASH shell prompt by executing /etc/bash.bashrc and execute any script named *.sh in /etc/profile.d.
+cron daemon checks the directories /var/spool/cron, /etc/cron.d and the file /etc/crontab, once a minute and executes any commands specified that match the time.
+              Contents placement of the crontab file
+              
+                ┌───────────── minute (0 - 59)
+                │ ┌───────────── hour (0 - 23)
+                │ │ ┌───────────── day of the month (1 - 31)
+                │ │ │ ┌───────────── month (1 - 12)
+                │ │ │ │ ┌───────────── day of the week (0 - 6) (Sunday to Saturday;
+                │ │ │ │ │                           7 is also Sunday on some systems)
+                │ │ │ │ │
+                │ │ │ │ │
+                * * * * * <Time/Day to execute    "Command to Execute"
+              
+              (Mnemonic: Minnie Has Daily Money Worries)
+              * The syntax of each line expects a cron expression made of five fields, followed
+              by a shell command to execute.
+
+
+
+
 
 
 

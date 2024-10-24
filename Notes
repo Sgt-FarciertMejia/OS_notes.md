@@ -115,5 +115,14 @@ Services and processes
 sudo lsof -c <process name>
 file descriptor will be a number followed by a letter that is its perms 
 
+FD is followed by one of these characters, describing the
+              mode under which the file is open:
 
+                   r for read access;
+                   w for write access;
+                   u for read and write access;
+                   space if mode unknown and no lock
+                        character follows;
+                   `-' if mode unknown and lock
+                        character follows.
 

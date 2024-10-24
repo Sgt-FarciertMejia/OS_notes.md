@@ -77,19 +77,31 @@ cron daemon checks the directories /var/spool/cron, /etc/cron.d and the file /et
 Review 
 Forms of persistance 
   Linux
-  -cron
-    /etc/crontab  /var/spool/cron  /etc/cron.d
-  -/etc/init --sysv
-  -/etc/profile
-  -/etc/environment
-  -/etc/inittab --sysv
-  -/etc/rc.d/rc*.d
+    -cron
+      /etc/crontab  /var/spool/cron  /etc/cron.d
+    -/etc/init --sysv
+    -/etc/profile
+    -/etc/environment
+    -/etc/inittab --sysv
+    -/etc/rc.d/rc*.d
 Services and processes
-  ps -elf
-  top or htop
-  systemctl status <pid>
-  /lib/systemd/systemd
-  /usr/lib/systemd/system
+    ps -elf
+    top or htop
+    systemctl status <pid>
+    /lib/systemd/systemd
+    /usr/lib/systemd/system
+  Windows
+    schtasks
+    registry locations
+    powershell profiles (4 of them all in fg and in order of precedence)
+  Services and Processes
+    get-service
+    get-process
+    get-ciminstance win32_service
+    artifacts
+    BAM
+    prefetch
+
 
 
 

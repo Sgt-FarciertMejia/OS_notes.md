@@ -112,7 +112,8 @@ Services and processes
     C:\windows\system32
     C:\users\public\downloads
 
-
+sudo lsof -c <process name>
+file descriptor will be a number followed by a letter that is its perms 
 
 
 

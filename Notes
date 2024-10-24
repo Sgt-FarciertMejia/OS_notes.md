@@ -74,8 +74,22 @@ cron daemon checks the directories /var/spool/cron, /etc/cron.d and the file /et
     crontab -e -u [user] This command will edit user’s crontab contents
 
 
-
-
+Review 
+Forms of persistance 
+  Linux
+  -cron
+    /etc/crontab  /var/spool/cron  /etc/cron.d
+  -/etc/init --sysv
+  -/etc/profile
+  -/etc/environment
+  -/etc/inittab --sysv
+  -/etc/rc.d/rc*.d
+Services and processes
+  ps -elf
+  top or htop
+  systemctl status <pid>
+  /lib/systemd/systemd
+  /usr/lib/systemd/system
 
 
 

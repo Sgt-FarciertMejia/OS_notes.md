@@ -89,7 +89,7 @@ Services and processes
     top or htop
     systemctl status <pid>
     /lib/systemd/systemd
-    /usr/lib/systemd/system
+    /usr/lib/systemd/systemUpdate Notes
   Windows
     schtasks
     registry locations
@@ -101,8 +101,16 @@ Services and processes
     artifacts
     BAM
     prefetch
-
-
+    userassisst 
+  ports look for bad ports by
+    repetitive
+    sequential
+  obfuscation 
+    taking the name of a legit process
+    abnormal for a government device
+    mispelling
+    C:\windows\system32
+    C:\users\public\downloads
 
 
 

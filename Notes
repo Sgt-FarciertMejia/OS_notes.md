@@ -89,7 +89,7 @@ Services and processes
     top or htop
     systemctl status <pid>
     /lib/systemd/systemd
-    /usr/lib/systemd/systemUpdate Notes
+    /usr/lib/systemd/system
   Windows
     schtasks
     registry locations
